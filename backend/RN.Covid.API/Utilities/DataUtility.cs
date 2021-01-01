@@ -37,7 +37,7 @@ namespace RN.Covid.API.Utilities
                             DailyHealing = String.IsNullOrEmpty(x.gunluk_iyilesen) ? 0 : decimal.Parse(x.gunluk_iyilesen),
                             TotalTest = String.IsNullOrEmpty(x.toplam_test) ? 0 : decimal.Parse(x.toplam_test),
                             TotalSick = String.IsNullOrEmpty(x.toplam_hasta) ? 0 : decimal.Parse(x.toplam_hasta),
-                            TotalDeath = String.IsNullOrEmpty(x.toplam_iyilesen) ? 0 : decimal.Parse(x.toplam_iyilesen),
+                            TotalDeath = String.IsNullOrEmpty(x.toplam_vefat) ? 0 : decimal.Parse(x.toplam_vefat),
                             TotalIntensiveCare = String.IsNullOrEmpty(x.toplam_yogun_bakim) ? 0 : decimal.Parse(x.toplam_yogun_bakim),
                             TotalIntubated = String.IsNullOrEmpty(x.toplam_entube) ? 0 : decimal.Parse(x.toplam_entube),
                             SickPneumonioRate = String.IsNullOrEmpty(x.hastalarda_zaturre_oran) ? 0 : decimal.Parse(x.hastalarda_zaturre_oran),
